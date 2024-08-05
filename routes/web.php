@@ -13,6 +13,7 @@ Route::get('/', function () {
 Route::get('/projects', [ProjectController::class, 'index']);
 
 Route::get('/users', [UserController::class, 'index']);
+Route::get('/users/{id}', [UserController::class, 'show']);
 
 Route::get('/cities', [CityController::class, 'index']);
 
