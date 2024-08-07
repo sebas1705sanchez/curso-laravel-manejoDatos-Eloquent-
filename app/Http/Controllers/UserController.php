@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 class UserController extends Controller
 {
     public function index() {
-        $user = User::paginate(2);
+        $user = User::all();
         return response()->json($user);
     }
 
